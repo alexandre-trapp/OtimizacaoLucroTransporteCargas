@@ -1,10 +1,15 @@
 library(shiny)
 library(GA)
+library(sets)
+library(shinythemes)
 
 itens = 0
 z = 0
 
 ui <- fluidPage(
+    
+    shinythemes::themeSelector(),
+    
     titlePanel("Otimização de Transporte de Cargas"),
     
     tabsetPanel(
